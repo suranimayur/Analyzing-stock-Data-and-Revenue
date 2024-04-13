@@ -11,7 +11,7 @@ The project focuses on extracting essential stock data and revenue information, 
 
 Define a Function that Makes a Graph: Defines a function to create a graph for visualizing stock data and revenue information.
 
-**Question 1:** Use yfinance to Extract Stock Data: Utilizes the yfinance library to extract historical stock data for a specified ticker symbol (e.g., Tesla - TSLA).
+# **Question 1:** Use yfinance to Extract Stock Data: Utilizes the yfinance library to extract historical stock data for a specified ticker symbol (e.g., Tesla - TSLA).
 
 import yfinance as yf
 
@@ -27,7 +27,7 @@ tesla_data.head()
 
 
 
-**Question 2:**  Use Webscraping to Extract Tesla Revenue Data: Performs web scraping to extract Tesla's revenue data from a specified webpage and preprocesses the data for analysis.
+# **Question 2:**  Use Webscraping to Extract Tesla Revenue Data: Performs web scraping to extract Tesla's revenue data from a specified webpage and preprocesses the data for analysis.
 
 import requests
 from bs4 import BeautifulSoup
@@ -54,7 +54,7 @@ tesla_revenue.head()
 tesla_revenue.tail()
 
 
-**Question 3:** Use yfinance to Extract Stock Data: Similar to Question 1, this extracts historical stock data for another specified ticker symbol (e.g., GameStop - GME) using yfinance.
+# **Question 3:** Use yfinance to Extract Stock Data: Similar to Question 1, this extracts historical stock data for another specified ticker symbol (e.g., GameStop - GME) using yfinance.
 
 # Create a Ticker object for GameStop (GME)
 GameStop = yf.Ticker("GME")
@@ -68,7 +68,7 @@ gme_data.head()
 
 
 
-**Question 4:** Use Webscraping to Extract GME Revenue Data: Utilizes web scraping to extract GameStop's revenue data from a webpage, preprocesses the data, and prepares it for visualization.
+# **Question 4:** Use Webscraping to Extract GME Revenue Data: Utilizes web scraping to extract GameStop's revenue data from a webpage, preprocesses the data, and prepares it for visualization.
 
 # URL for GameStop revenue data
 url ="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-PY0220EN-SkillsNetwork/labs/project/stock.html"
@@ -89,14 +89,14 @@ gme_revenue.tail()
 
 
 
-**Question 5:** Plot Tesla Stock Graph: Utilizes the previously defined function to plot the stock graph for Tesla, incorporating historical stock data and revenue information.
+# **Question 5:** Plot Tesla Stock Graph: Utilizes the previously defined function to plot the stock graph for Tesla, incorporating historical stock data and revenue information.
 
 # Use the previously defined make_graph function to plot Tesla stock graph
 make_graph(tesla_data, tesla_revenue, 'Tesla')
 
 
 
-**Question 6:** Plot GameStop Stock Graph: Similar to Question 5, this plots the stock graph for GameStop, incorporating relevant data.
+# **Question 6:** Plot GameStop Stock Graph: Similar to Question 5, this plots the stock graph for GameStop, incorporating relevant data.
 
 # Use the previously defined make_graph function to plot GameStop stock graph
 make_graph(gme_data, gme_revenue, 'GameStop')
